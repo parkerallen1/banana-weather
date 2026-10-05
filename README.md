@@ -2,6 +2,17 @@
 
 A new Flutter project.
 
+## API keys
+
+The app reads an OpenWeatherMap key and a Gemini key from `lib/api_keys.dart`. The keys committed
+there are visible to anyone, because this repo and its history are public. Both have been revoked:
+
+- The Gemini key was already invalid when it was checked on 2026-10-05.
+- The OpenWeatherMap key was deleted on 2026-10-05.
+
+To run the app, put your own keys in `lib/api_keys.dart` and keep that change out of commits, for
+example with `git update-index --skip-worktree lib/api_keys.dart`. Anything pushed here is public.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
